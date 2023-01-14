@@ -1,0 +1,25 @@
+//====================================================================================================
+.footer {
+	background: #343a40;
+	padding: 1.875rem 0;
+	// .footer__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.9375rem;
+		color: #e5e5e5;
+		line-height: 128.571429%; /* 18/14 */
+	}
+	// .footer__text
+	&__text {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	// .footer__up
+	&__up:hover {
+		text-decoration: underline;
+	}
+}
+
+//====================================================================================================
