@@ -1,0 +1,135 @@
+.article__big-post {}
+
+
+//========================================================================================================================================================
+// ?.article
+.article {
+	// .article__content
+	&__content {
+		padding: 6.25rem 0;
+		@media (max-width: 991.98px){
+			padding: 4.375rem 0;  
+		}
+		@media (max-width: 767.98px){
+			padding: 2.5rem 0;  
+		}
+	}
+	// .article__container
+	&__container {
+		display: grid;
+		align-items: start;
+		gap: 1.25rem;
+		grid-template-columns: 12.5rem 1fr 12.5rem;
+		@media (max-width: 991.98px){
+			grid-template-columns: 12.5rem 1fr; 
+		}
+		@media (max-width: 767.98px){
+			grid-template-columns: auto;   
+		}
+	}
+	// .article__info
+	&__info {
+		display: flex;
+		gap: 0.4375rem;
+		align-items: center;
+		font-size: 0.75rem;
+		line-height: 208.333333%; /* 25/12 */
+		font-weight: 700;
+	}
+	// .article__date
+	&__date {
+		display: flex;
+		gap: 0.4375rem;
+		align-items: center;
+		&::after{
+			content:'';
+			height: 0.0625rem;
+			width: 2.1875rem;
+			background-color: #c4c4c4;
+		}
+	}
+	// .article__time
+	&__time {}
+	// .article__body
+	&__body {
+		display: grid;
+		gap: 3.125rem;
+		@media (max-width: 991.98px){
+			gap: 1.875rem;
+		}
+	}
+	// .article__text
+	&__text {
+		display: grid;
+		gap: 1.875rem;
+		line-height: 178.571429%; /* 25/14 */
+		blockquote {
+			color: #d4a373;
+			font-size: 2.25rem;
+			line-height: 127.777778%; /* 46/36 */
+			font-weight: 700;
+			@media (max-width: 991.98px){
+				font-size: 1.5625rem;
+			}
+		}
+		@media (max-width: 991.98px){
+			gap: 0.9375rem;
+		}
+	}
+	// .article__tags
+	&__tags {
+		display: flex;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+		border-bottom: 0.5px solid #c4c4c4;
+		padding-bottom: 3.125rem;
+		@media (max-width: 991.98px){
+			padding-bottom: 1.875rem;
+		}
+	}
+	// .article__tag
+	&__tag {
+		color: #6C757D;
+		border: 0.0625rem solid #e5e5e5;
+		border-radius: 0.3125rem;
+		&:hover {
+			background-color: #e5e5e5;
+		}
+	}
+	// .article__author
+	&__author {}
+}
+
+.author {
+	display: flex;
+	gap: 1.0625rem;
+	// .author__avatar
+	&__avatar {
+		flex: 0 0 3.125rem;
+		height: 3.125rem;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	// .author__body
+	&__body {
+		display: grid;
+		align-self: center;
+		font-size: 0.75rem;
+		gap: 0.5rem;
+	}
+	// .author__title
+	&__title {
+		color: #343a40;
+		font-weight: 700;
+	}
+	// .author__skils
+	&__skils {
+		color: #6c757d;
+	}
+}
+
+//========================================================================================================================================================
+
+.article__related {
+	background: rgba(229, 229, 229, 0.3);
+}

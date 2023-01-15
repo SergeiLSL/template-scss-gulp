@@ -1,43 +1,43 @@
-// Загальний файл елементів форм
-// Для підключення/відключення стилів конкретного елемента форми дивись base/forms/forms.scss
+// Общий файл элементов форм
+// Для подключения/отключения стилей конкретного элемента формы смотри base/forms/forms.scss
 @import "base/forms/forms";
 
-// Стилі попапів
+// Стили попапов
 // @import "base/popup";
 
-// Стилі спойлерів
+// Стили спойлеров
 // @import "base/spollers";
 
-// Стилі табів
+// Стили табов
 // @import "base/tabs";
 
-// Стилі мап
+// Стили карт
 // @import "base/maps";
 
-// Стилі блоку "показати ще"
+// Стили блока "показать еще"
 // @import "base/showmore";
 
-// Стилі для липкого блоку
+// Стили для липкого блока
 // @import "base/sticky";
 
-// Стилі для повноекранного блоку
+// Стили для полноэкранного блока
 // @import "base/fullscreen";
 
-// Стилі для поекраної прокрутки
+// Стили для поэкраной прокрутки
 // Styles for fullpage scroll
 // @import "base/fullpage";
 
-// Стилі для ripple ефекту
+// Стили для ripple эффекта
 // Styles for ripple effect
 // @import "base/ripple";
 
-// Стилі для кастомного курсору
+// Стили для кастомного курсора
 // Styles for custom cursor
 // @import "base/cursor";
 
-// Стилі для чуйних картинок (IBG)
-// Сніппет (HTML): ibg (div з картинкою та класами)
-// Сніппет (HTML): ibga (a з картинкою та класами)
+// Стили для отзывчивых картинок (IBG)
+// Сниппет (HTML): ibg (div c картинкой и классами)
+// Сниппет (HTML): ibga (a c картинкой и классами)
 [class*="-ibg"] {
 	position: relative;
 	img {
@@ -55,11 +55,11 @@
 	}
 }
 
-// Шаблони (заготівлі)
-// @extend %ім'я шаблону;
-// Сніппет (SCSS): ex
+// Шаблоны (заготовки)
+// @extend %имя шаблона;
+// Сниппет (SCSS): ex
 
-// Лічильник для списку
+// Счетчик для списка
 %listCounter {
 	list-style-type: none;
 	counter-reset: item;
@@ -74,7 +74,7 @@
 		}
 	}
 }
-// Адаптивне відео
+// Адаптивное видео
 %responsiveVideo {
 	position: relative;
 	overflow: hidden;
@@ -91,7 +91,7 @@
 		height: 100%;
 	}
 }
-// Відео як фон
+// Видео в качестве фона
 %videoBackground {
 	video,
 	iframe,
@@ -109,7 +109,7 @@
 		background-size: cover;
 	}
 }
-// Сірий фільтр
+// Серый фильтр
 %grayfilter {
 	transition: all 0.3s ease 0s;
 	filter: grayscale(1);
@@ -119,19 +119,19 @@
 		}
 	}
 }
-// Скасувати виділення
+// Отменить выделение
 %noselect {
 	user-select: none;
 }
-// Дзеркальне відображення
+// Зеркальное отображение
 %mirror {
 	transform: scale(-1, 1);
 }
-// Плавний скролл
+// Плавный скролл
 %smoothscroll {
 	-webkit-overflow-scrolling: touch;
 }
-// Сховати скролл
+// Скрыть скролл
 %hidescroll {
 	&::-webkit-scrollbar {
 		display: none;

@@ -1,0 +1,43 @@
+.big-post {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+}
+.big-post__container {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  z-index: 2;
+  gap: 0.8125rem;
+}
+.big-post__title {
+  max-width: 33.125rem;
+}
+.big-post__text {
+  color: #e5e5e5;
+  max-width: 26.25rem;
+}
+.big-post__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #343a40;
+}
+.big-post__bg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
