@@ -12,7 +12,7 @@
 		"body": [
 			"<div class=\"rating rating_set\">\n\t<div class=\"rating__body\">\n\t\t<div class=\"rating__active\"></div>\n\t\t<div class=\"rating__items\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"1\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"2\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"3\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"4\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"5\" name=\"rating\">\n\t\t</div>\n\t</div>\n\t<div class=\"rating__value\">3.6</div>\n</div>"
 		],
-		"description": "Додає базовий HTML код рейтингу"
+		"description": "Добавляет базовый HTML код рейтинга"
 	},
 	"Spollers": {
 		"scope": "html",
@@ -20,7 +20,7 @@
 		"body": [
 			"<div data-spollers class=\"spollers\">\n\t<div class=\"spollers__item\">\n\t\t<button type=\"button\" data-spoller class=\"spollers__title\">Заголовок спойлера</button>\n\t\t<div class=\"spollers__body\">Контент спойлера</div>\n\t</div>\n</div>"
 		],
-		"description": "Додає базовий HTML код спойлерів"
+		"description": "Добавляет базовый HTML код спойлера"
 	},
 	"Tabs": {
 		"scope": "html",
@@ -28,7 +28,7 @@
 		"body": [
 			"<div data-tabs class=\"${1:tabs}\">\n\t<nav data-tabs-titles class=\"${1:tabs}__navigation\">\n\t\t<button type=\"button\" class=\"${1:tabs}__title _tab-active\">Таб №1</button>\n\t\t<button type=\"button\" class=\"${1:tabs}__title\">Таб №2</button>\n\t\t<button type=\"button\" class=\"${1:tabs}__title\">Таб №3</button>\n\t</nav>\n\t<div data-tabs-body class=\"${1:tabs}__content\">\n\t\t<div class=\"${1:tabs}__body\">\n\t\t\tВміст першого таба\n\t\t</div>\n\t\t<div class=\"${1:tabs}__body\">\n\t\t\tВміст другого таба\n\t\t</div>\n\t\t<div class=\"${1:tabs}__body\">\n\t\t\tВміст третього таба\n\t\t</div>\n\t</div>\n</div>"
 		],
-		"description": "Додає базовий HTML код табів"
+		"description": "Добавляет базовый HTML код табов"
 	},
 	"Show More": {
 		"scope": "html",
@@ -36,7 +36,7 @@
 		"body": [
 			"<div data-showmore class=\"${1:block}\">\n\t<div data-showmore-content class=\"${1:block}__content\"></div>\n\t<button hidden data-showmore-button type=\"button\" class=\"${1:block}__more\"><span>Показати ще</span><span>Скыть</span></button>\n</div>"
 		],
-		"description": "Додає базовий HTML код блоку 'показати ще'"
+		"description": "Добавляет базовый HTML код блоку 'показать еще'"
 	},
 	"Swiper": {
 		"scope": "html",
@@ -44,7 +44,7 @@
 		"body": [
 			"<div class=\"${1:имя-блока}__slider swiper\">\n\t<div class=\"${1:ім'я-блоку}__wrapper swiper-wrapper\">\n\t\t<div class=\"${1:ім'я-блоку}__slide swiper-slide\"></div>\n\t</div>\n</div>"
 		],
-		"description": "Додає базовий HTML-код слайдера Swiper"
+		"description": "Добавляет базовый HTML-код слайдера Swiper"
 	},
 	"Swiper Full": {
 		"scope": "html",
@@ -52,27 +52,27 @@
 		"body": [
 			"<!-- Оболонка слайдера -->\n<div class=\"${1:ім'я-блоку}__slider swiper\">\n\t<!-- Частина слайдера, що рухається -->\n\t<div class=\"${1:ім'я-блоку}__wrapper swiper-wrapper\">\n\t\t<!-- Слайд -->\n\t\t<div class=\"${1:ім'я-блоку}__slide swiper-slide\"></div>\n\t</div>\n\t<!-- Якщо потрібна пагінація -->\n\t<div class=\"swiper-pagination\"></div>\n\t<!-- Якщо потрібна навігація (ліворуч/праворуч) -->\n\t<button type=\"button\" class=\"swiper-button-prev\"></button>\n\t<button type=\"button\" class=\"swiper-button-next\"></button>\n\t<!-- Якщо потрібен скролбар -->\n\t<div class=\"swiper-scrollbar\"></div>\n</div>"
 		],
-		"description": "Додає базовий HTML-код слайдера Swiper"
+		"description": "Добавляет базовый HTML-код слайдера Swiper"
 	},
 	"Quantity": {
 		"scope": "html",
 		"prefix": "quantity",
 		"body": "<div data-quantity class=\"quantity\">\n\t<button data-quantity-plus type=\"button\" class=\"quantity__button quantity__button_plus\"></button>\n\t<div class=\"quantity__input\">\n\t\t<input data-quantity-value autocomplete=\"off\" type=\"text\" name=\"form[]\" value=\"1\">\n\t</div>\n\t<button data-quantity-minus type=\"button\" class=\"quantity__button quantity__button_minus\"></button>\n</div>",
-		"description": "Додає HTML форми з кількістю"
+		"description": "Добавляет HTML формы с количеством"
 	},
 	"FullPage": {
 		"scope": "html",
 		"prefix": "fullpage",
 		"body": "<div data-fp class=\"${1:ім'я-блоку}\">\n\t<div data-fp-section class=\"${1:ім'я-блоку}__section\"></div>\n</div>",
-		"description": "Додає структуру екранного прокручування сторінки"
+		"description": "Добавляет структуру экранной прокрутки страницы"
 	},
 	"Add tooltip": {
 		"scope": "html",
 		"prefix": "tip",
 		"body": [
-			"data-tippy-content=\"Підказка\""
+			"data-tippy-content=\"Подсказка\""
 		],
-		"description": "Додає текст-підказку (Tippy)"
+		"description": "Добавляет текст-подсказку (Tippy)"
 	},
 	"Add data-required": {
 		"scope": "html",
@@ -80,43 +80,43 @@
 		"body": [
 			"data-required"
 		],
-		"description": "Додає атрибут до поля форми"
+		"description": "Добавляет атрибут к полю формы."
 	},
 	"Add dynamic adapt": {
 		"scope": "html",
 		"prefix": "da",
 		"body": [
-			"data-da=\".${1:ім'я блоку}, 768\""
+			"data-da=\".${1:имя блока}, 768\""
 		],
-		"description": "Додає атрибут динамічного адаптиву"
+		"description": "Добавляет атрибут динамического адаптива."
 	},
 	"Add image IBG": {
 		"scope": "html",
 		"prefix": "ibg",
 		"body": [
-			"<div class=\"${1:ім'я блоку}__image-ibg\"><img data-src=\"@img$2\" alt=\"\"></div>"
+			"<div class=\"${1:имя блока}__image-ibg\"><img data-src=\"@img$2\" alt=\"\"></div>"
 		],
-		"description": "Додає об'єкт з картинкою та класом IBG"
+		"description": "Добавляет объект с картинкой и классом IBG"
 	},
 	"Add Link with image IBG": {
 		"scope": "html",
 		"prefix": "ibga",
 		"body": [
-			"<a href=\"\" class=\"${1:ім'я блоку}__image-ibg\"><img data-src=\"@img$2\" alt=\"\"></a>"
+			"<a href=\"\" class=\"${1:имя блока}__image-ibg\"><img data-src=\"@img$2\" alt=\"\"></a>"
 		],
-		"description": "Додає посилання з картинкою та класом IBG"
+		"description": "Добавляет ссылку с картинкой и классом IBG"
 	},
 	"Add input tag": {
 		"scope": "html",
 		"prefix": "inp",
-		"body": "<input autocomplete=\"off\" type=\"text\" name=\"form[]\" data-error=\"Помилка\" placeholder=\"\" class=\"input\">",
-		"description": "Додає input з налаштуваннями"
+		"body": "<input autocomplete=\"off\" type=\"text\" name=\"form[]\" data-error=\"Ошибка\" placeholder=\"\" class=\"input\">",
+		"description": "Добавляет input с настройками"
 	},
 	"Add container": {
 		"scope": "html",
 		"prefix": "cnt",
-		"body": "<div class=\"${1:ім'я блоку}__container\">\n\t$2\n</div>",
-		"description": "Додає обмежуючий контейнер"
+		"body": "<div class=\"${1:имя блока}__container\">\n\t$2\n</div>",
+		"description": "Добавляет ограничивающий контейнер"
 	},
 	"Adaptiv Value": {
 		"scope": "scss",
@@ -124,7 +124,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:font-size}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"EM": {
 		"scope": "scss",
@@ -132,7 +132,7 @@
 		"body": [
 			"em($1,$2)"
 		],
-		"description": "Виклик міксину переведення в EM"
+		"description": "Вызов миксина перевода в в EM"
 	},
 	"REM": {
 		"scope": "scss",
@@ -140,7 +140,7 @@
 		"body": [
 			"rem($1)"
 		],
-		"description": "Виклик міксину переведення в REM"
+		"description": "Вызов миксина перевода в REM"
 	},
 	"Percent": {
 		"scope": "scss",
@@ -148,7 +148,7 @@
 		"body": [
 			"percent($1,$2)"
 		],
-		"description": "Виклик міксину переведення в %"
+		"description": "Вызов миксина перевода в %"
 	},
 	"Percent padding": {
 		"scope": "scss",
@@ -156,7 +156,7 @@
 		"body": [
 			"padding-bottom: percent($1,$2);"
 		],
-		"description": "Відступ вниз із зазначенням %"
+		"description": "Отступ вниз с указанием %"
 	},
 	"Font Size in REM": {
 		"scope": "scss",
@@ -172,49 +172,49 @@
 		"body": [
 			"math.div($1,$2)"
 		],
-		"description": "Ділення чисел"
+		"description": "Деление чисел"
 	},
 	"Width with REM": {
 		"scope": "scss",
 		"prefix": "w",
 		"body": "width: rem($1);",
-		"description": "Додає width з переведенням у REM"
+		"description": "Добавляет width с переводом в REM"
 	},
 	"Height with REM": {
 		"scope": "scss",
 		"prefix": "h",
 		"body": "height: rem($1);",
-		"description": "Додає height з переведенням у REM"
+		"description": "Добавляет height с переводом в REM"
 	},
 	"Margin bottom with REM": {
 		"scope": "scss",
 		"prefix": "mb",
 		"body": "margin-bottom: rem($1);",
-		"description": "Додає нижній відступ з переведенням у REM"
+		"description": "Добавляет нижний отступ с переводом в REM"
 	},
 	"Margin bottom": {
 		"scope": "css",
 		"prefix": "mb",
 		"body": "margin-bottom: $1px;",
-		"description": "Додає нижній відступ з переведенням у REM"
+		"description": "Добавляет нижний отступ с переводом в REM"
 	},
 	"Margin top with REM": {
 		"scope": "scss",
 		"prefix": "mt",
 		"body": "margin-top: rem($1);",
-		"description": "Додає верхній відступ з переведенням у REM"
+		"description": "Добавляет верхний отступ с переводом в REM"
 	},
 	"Margin top": {
 		"scope": "css",
 		"prefix": "mt",
 		"body": "margin-top: $1px;",
-		"description": "Додає верхній відступ з переведенням у REM"
+		"description": "Добавляет верхний отступ с переводом в REM"
 	},
 	"Margin bottom with EM": {
 		"scope": "scss",
 		"prefix": "mbe",
 		"body": "margin-bottom: em($1, $2);",
-		"description": "Додає нижній відступ з переведенням у EM"
+		"description": "Добавляет нижний отступ с переводом в EM"
 	},
 	"Margin Bottom not last-child": {
 		"scope": "scss",
@@ -222,7 +222,7 @@
 		"body": [
 			"&:not(:last-child) {margin-bottom: $1px;}"
 		],
-		"description": "Додає нижній відступ, виключаючи останній об'єкт"
+		"description": "Добавляет нижний отступ за исключением последнего объекта"
 	},
 	"Margin Bottom not last-child with EM": {
 		"scope": "scss",
@@ -230,7 +230,7 @@
 		"body": [
 			"&:not(:last-child) {margin-bottom: em($1, $2);}"
 		],
-		"description": "Додає нижній відступ за винятком останнього об'єкту з переведенням у EM"
+		"description": "Добавляет нижний отступ за исключением последнего объекта с переводом в EM"
 	},
 	"Not last-child": {
 		"scope": "scss",
@@ -238,25 +238,25 @@
 		"body": [
 			"&:not(:last-child) {\n\t$1\n}"
 		],
-		"description": "Виключаючи останній об'єкт"
+		"description": "Исключая последний объект"
 	},
 	"Opacity": {
 		"scope": "scss,css",
 		"prefix": "op",
 		"body": "opacity: ${1:0};",
-		"description": "Додає відносний opacity"
+		"description": "Добавляет относительный opacity"
 	},
 	"Line height": {
 		"scope": "scss",
 		"prefix": "lh",
 		"body": "line-height: math.div($1 , $2);",
-		"description": "Додає відносний line-height"
+		"description": "Добавляет относительный line-height"
 	},
 	"Color inherit": {
 		"scope": "scss",
 		"prefix": "ci",
 		"body": "color: inherit;",
-		"description": "Наслідувати колір предка"
+		"description": "Следовать цвету предка"
 	},
 	"Max width": {
 		"scope": "scss",
@@ -276,7 +276,7 @@
 		"body": [
 			"@media (max-width: em($1)){\n\t $2 \n}"
 		],
-		"description": "Додає медіазапит max-width з перекладом у EM"
+		"description": "Добавляет медиазапрос max-width с переводом в EM"
 	},
 	"@media max (CSS)": {
 		"scope": "css",
@@ -284,7 +284,7 @@
 		"body": [
 			"@media (max-width: $1px){\n\t $2 \n}"
 		],
-		"description": "Додає медіазапит max-width з перекладом у EM"
+		"description": "Добавляет медиазапрос max-width с переводом в px"
 	},
 	"@media min": {
 		"scope": "scss",
@@ -292,7 +292,7 @@
 		"body": [
 			"@media (min-width:em($1)){\n\t $2 \n}"
 		],
-		"description": "Додає медіазапит min-width з перекладом у EM"
+		"description": "Добавляет медиазапрос min-width с переводом в EM"
 	},
 	"@media min (CSS)": {
 		"scope": "css",
@@ -300,7 +300,7 @@
 		"body": [
 			"@media (min-width:$1px){\n\t $2 \n}"
 		],
-		"description": "Додає медіазапит min-width з перекладом у EM"
+		"description": "Добавляет медиазапрос min-width с переводом в px"
 	},
 	"Add data-popup": {
 		"scope": "html",
@@ -308,7 +308,7 @@
 		"body": [
 			"data-popup=\"$1\""
 		],
-		"description": "Додає атрибут для відкриття попапа"
+		"description": "Добавляет атрибут для открытия попапа."
 	},
 	"JS Click": {
 		"scope": "javascript,typescript",
@@ -961,7 +961,7 @@
 	"Textarea": {
 		"scope": "html,kit",
 		"prefix": "txta",
-		"body": "<textarea autocomplete=\"off\" name=\"form[]\" placeholder=\"$1\" data-error=\"Помилка\" class=\"input\"></textarea>",
+		"body": "<textarea autocomplete=\"off\" name=\"form[]\" placeholder=\"$1\" data-error=\"Ошибка\" class=\"input\"></textarea>",
 		"description": "txta"
 	},
 	"Select": {
@@ -976,7 +976,7 @@
 	},
 	"CheckBox": {
 		"prefix": "chk",
-		"body": "<div class=\"checkbox\">\n\t<input id=\"c_1\" data-error=\"Помилка\" class=\"checkbox__input\" type=\"checkbox\" value=\"1\" name=\"form[]\">\n\t<label for=\"c_1\" class=\"checkbox__label\"><span class=\"checkbox__text\">${1:Текст}</span></label>\n</div>",
+		"body": "<div class=\"checkbox\">\n\t<input id=\"c_1\" data-error=\"Ошибка\" class=\"checkbox__input\" type=\"checkbox\" value=\"1\" name=\"form[]\">\n\t<label for=\"c_1\" class=\"checkbox__label\"><span class=\"checkbox__text\">${1:Текст}</span></label>\n</div>",
 		"description": ""
 	},
 	"Button": {
@@ -1077,7 +1077,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:margin}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value margin top": {
 		"scope": "scss",
@@ -1085,7 +1085,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:margin-top}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value margin bottom": {
 		"scope": "scss",
@@ -1093,7 +1093,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:margin-bottom}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value margin right": {
 		"scope": "scss",
@@ -1101,7 +1101,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:margin-right}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value margin left": {
 		"scope": "scss",
@@ -1109,7 +1109,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:margin-left}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value padding": {
 		"scope": "scss",
@@ -1117,7 +1117,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:padding}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value padding top": {
 		"scope": "scss",
@@ -1125,7 +1125,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:padding-top}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value padding bottom": {
 		"scope": "scss",
@@ -1133,7 +1133,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:padding-bottom}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value padding right": {
 		"scope": "scss",
@@ -1141,7 +1141,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:padding-right}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Adaptiv Value padding left": {
 		"scope": "scss",
@@ -1149,7 +1149,7 @@
 		"body": [
 			"@include adaptiveValue(\"${1:padding-left}\", $2, $3);"
 		],
-		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
+		"description": "Адаптивное свойство (clamp): CSS-свойство, начальное значение, конечное значение, ширина начальная, ширина конечная"
 	},
 	"Padding CSS": {
 		"scope": "css",
@@ -1173,7 +1173,7 @@
 		"body": [
 			"@@include('html/_preloader.htm',{})"
 		],
-		"description": "Додає підключення прелоадеру"
+		"description": "Добавляет подключение прелоадеру"
 	},
 	"Add popup": {
 		"scope": "html, htm",
@@ -1181,13 +1181,13 @@
 		"body": [
 			"@@include('html/_popup.htm',{})"
 		],
-		"description": "Додає HTML попапу"
+		"description": "Добавляет HTML попап"
 	},
 	"Use SVG": {
 		"prefix": "usvg",
 		"body": [
 			"<svg>",
-			"\t<use xlink:href=\"@img/icons/icons.svg#${1:назва іконки}\"></use>",
+			"\t<use xlink:href=\"@img/icons/icons.svg#${1:название иконки}\"></use>",
 			"</svg>"
 		],
 		"description": "use svg"
