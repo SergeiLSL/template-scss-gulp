@@ -46,7 +46,7 @@
 // ?.home__related
 
 .related {
-	@include adaptiveValue("padding-top", 100, 25);
+	@include adaptiveValue("padding-top", 100, 30);
 	@include adaptiveValue("padding-bottom", 100, 30);
 	// .related__container
 	&__container {}
