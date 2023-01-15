@@ -16,6 +16,7 @@
 .tabs {
 	@include adaptiveValue("padding-top", 100, 30);
 	@include adaptiveValue("padding-bottom", 100, 30);
+	margin-bottom: rem(30);
 	// .tabs__container
 	&__container {
 	}
@@ -74,21 +75,41 @@
 .popular {
 	// .popular__items
 	&__items {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
-		column-gap: rem(20);
-		row-gap: rem(50);
-		@media (max-width: $mobile){
-			row-gap: rem(30);
-		}
+		// display: grid;
+		// grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+		// column-gap: rem(20);
+		// row-gap: rem(50);
+		// @media (max-width: $mobile){
+		// 	row-gap: rem(30);
+		// }
+		display: flex;
+		row-gap: rem(20);
+		margin: 0 rem(-10);
+		flex-wrap: wrap;
+		
 	}
 	// .popular__item
 	&__item {
+		flex: 0 1 25%;
+		padding: 0 rem(10);
+		@media (max-width: rem(1200)){
+			flex: 0 1 33.3333%;
+		}
+		@media (max-width:$tablet){
+			flex: 0 1 50%;
+		}
+		@media (max-width:$mobile){
+			flex: 0 1 100%; 
+		}
+
 	}
 }
 
 .item-popular {
-	display: grid;
+	//display: grid;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 	align-content: start;
 	gap: rem(15);
 	position: relative;	
@@ -139,6 +160,7 @@
 	// .item-popular__text
 	&__text {
 		color: #6c757d;
+		flex: 1 1 auto; 
 	}
 }
 
