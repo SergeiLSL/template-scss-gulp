@@ -1,22 +1,24 @@
 <!-- Стилі для body -->
 <style>
-	.lock body{
+	.lock body {
 		overflow: hidden;
 		touch-action: none;
 		overscroll-behavior: none;
 	}
-	.loading body{
+
+	.loading body {
 		opacity: 0;
 		visibility: hidden;
 	}
-	.loaded body{
+
+	.loaded body {
 		transition: opacity 0.5s ease 0s;
 		opacity: 1;
 		visibility: visible;
 	}
 </style>
 <div id="fls-preloader">
-	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<!-- Документация: https://template.fls.guru/template-docs/modul-preloader.html -->
 	<!-- Стилі для прелоадера -->
 	<style>
 		* {
@@ -24,13 +26,15 @@
 			margin: 0px;
 			border: 0px;
 		}
+
 		*,
 		*:before,
 		*:after {
 			box-sizing: border-box;
 		}
+
 		/* Головний блок */
-		.fls-preloader{
+		.fls-preloader {
 			pointer-events: none;
 			z-index: -1;
 			position: fixed;
@@ -39,24 +43,28 @@
 			top: 0;
 			left: 0;
 			display: flex;
-			justify-content:center;
+			justify-content: center;
 			align-items: center;
 		}
+
 		/* Блок з елементами */
-		.fls-preloader__body{
+		.fls-preloader__body {
 			padding: 0.93rem;
 			max-width: 31.25rem;
 			display: flex;
 			flex-direction: column;
 		}
+
 		/* Блок з лічильником */
-		.fls-preloader__counter{
+		.fls-preloader__counter {
 			font-size: 10rem;
 		}
+
 		/* Прогресбар */
-		.fls-preloader__line{}
+		.fls-preloader__line {}
+
 		/* Лінія прогресбару */
-		.fls-preloader__line span{
+		.fls-preloader__line span {
 			display: inline-block;
 			transition: width 0.2s ease;
 			height: 0.8rem;
@@ -69,14 +77,14 @@
 			const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
 			const preloaderContainer = document.querySelector('#fls-preloader');
 			if (preloaderImages.length) {
-				const preloaderTemplate =`
+				const preloaderTemplate = `
 					<div class="fls-preloader">
 						<div class="fls-preloader__body">
 							<div class="fls-preloader__counter">0%</div>
 							<div class="fls-preloader__line"><span></span></div>
 						</div>
 					</div>`;
-				document.querySelector('html').insertAdjacentHTML("beforeend",preloaderTemplate);
+				document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
 
 				const
 					preloader = document.querySelector('.fls-preloader'),
@@ -85,7 +93,7 @@
 					htmlDocument = document.documentElement;
 
 				let imagesLoadedCount = counter = progress = 0;
-				
+
 				htmlDocument.classList.add('loading');
 				htmlDocument.classList.add('lock');
 
@@ -98,7 +106,7 @@
 					}
 				});
 				function setValueProgress(progress) {
-					showPecentLoad ? showPecentLoad.innerText = `${progress}%`: null;
+					showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
 					showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
 				}
 				showPecentLoad ? setValueProgress(progress) : null;
@@ -120,7 +128,7 @@
 						preloaderContainer.remove();
 					}, 500);
 				}
-			}else{
+			} else {
 				preloaderContainer.remove();
 			}
 		}
