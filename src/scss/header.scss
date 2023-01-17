@@ -11,10 +11,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 0.9375rem;
-		padding-top: 0.625rem;
-		padding-bottom: 0.625rem;
-		min-height: 5rem;
+		gap: rem(15);
+		padding-top: rem(10);
+		padding-bottom: rem(10);
+		min-height: rem(80);
 	}
 	// .header__logo
 	&__logo {
@@ -30,8 +30,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		row-gap: 0.3125rem;
-		column-gap: 1.5rem;
+		row-gap: rem(5);
+		column-gap: rem(24);
 	}
 	// .menu__item
 	&__item {
@@ -50,7 +50,7 @@
 			bottom: 0;
 			left: 50%;
 			width: 0;
-			height: 0.125rem; /* 2 px */
+			height: rem(2); /* 2 px */
 			transition: all 0.3s ease;
 			background-color: #d4a373;
 		}

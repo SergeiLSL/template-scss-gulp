@@ -9,7 +9,7 @@
 		@@include('html/_header.htm',{})
 		<main class="home">
 			<div class="home__section">
-				<div class="home__main-slider main-slider swiper none">
+				<div class="home__main-slider main-slider swiper">
 					<div class="main-slider__wrapper swiper-wrapper">
 						<div class="main-slider__slide swiper-slide">
 							<img class="main-slider__bg" src="@img/main-slaider/01.jpg" alt="Image">
@@ -361,7 +361,7 @@
 							By Jennifer Lawrence
 						</a>
 					</div>
-					<div class="big-post__bg-ibg">
+					<div class="big-post__bg -ibg">
 						<img src="@img/big-post/image.jpg" alt="Image">
 					</div>
 				</section>
@@ -432,6 +432,9 @@
 		@@include('html/_footer.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 
 </html>

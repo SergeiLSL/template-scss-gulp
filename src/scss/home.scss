@@ -1,5 +1,8 @@
 //====================================================================================================
 .home {
+	// .home__main-slider
+	&__main-slider {
+	}
 	// .home__popular
 	&__popular {
 	}
@@ -10,13 +13,177 @@
 	}
 }
 //====================================================================================================
+// ?.home__main-slider
+/* --------------------------------- */
+.home {
+	// .home__section
+	&__section {
+		display: grid;
+		//gap: 100px;
+		@media (max-width: $tablet) {
+			//gap: 4.375rem;
+		}
+		@media (max-width: $mobile) {
+			//gap: 2.5rem;
+		}
+	}
+	// .home__main-slider
+	&__main-slider {
+	}
+	// .home__popular
+	&__popular {
+	}
+	// .home__big-post
+	&__big-post {
+	}
+	// .home__related
+	&__related {
+	}
+}
+/* --------------------------------- */
+// плавное появление текста на слайдах
+// transform: translate, с помощью которой можно переместить 
+// элемент с его начальной точки. 
+.main-slider {
+	&__category,
+	&__title,
+	&__body {
+		transform: translate(0px, rem(50));
+		opacity: 0;
+		transition: all 0.8s;
+	}
+}
+/* --------------------------------- */
+// Свойство transition-delay устанавливает время ожидания 
+//перед запуском эффекта перехода. Значение 0s запускает анимацию сразу же.
+.loaded .main-slider { 
+	&__category {
+		transition-delay: 0.5s;
+	}
+	&__title {
+		transition-delay: 0.7s;
+	}
+	&__body {
+		transition-delay: 0.8s;
+	}
+	&__category,
+	&__title,
+	&__body {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+/* --------------------------------- */
+.main-slider {
+	min-width: 0;
+	// .main-slider__wrapper
+	&__wrapper {
+		display: flex;
+	}
+	// .main-slider__slide
+	&__slide {
+		flex-shrink: 0;
+		position: relative;
+		overflow: hidden;
+		background-color: #343a40;
+	}
+	// .main-slider__bg
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		opacity: 0.8;
+	}
+	// .main-slider__container
+	&__container {
+		min-height: 100vh;
+		z-index: 2;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		gap: rem(15);
+		padding-top: rem(100);
+		padding-bottom: rem(140);
+	}
+	// .main-slider__category
+	&__category {
+	}
+	// .main-slider__title
+	&__title {
+		max-width: rem(530);
+	}
+	// .main-slider__body
+	&__body {
+		color: #e5e5e5;
+		display: flex;
+		align-items: flex-start;
+		gap: rem(11);
+	}
+	// .main-slider__data
+	&__data {
+		line-height: 125%; /* 15/12 */
+		display: flex;
+		gap: rem(11);
+		align-items: center;
+		&::after {
+			content: "";
+			width: rem(30);
+			height: rem(1);
+			background-color: #e5e5e5;
+		}
+	}
+	// .main-slider__text
+	&__text {
+		max-width: rem(420);
+	}
+	// .main-slider__bullets
+	&__bullets {
+	}
+}
+
+.bullets {
+	position: relative;
+	z-index: 2;
+	margin-top: rem(-140);
+	// .bullets__container
+	&__container {
+	}
+	// .bullets__items
+	&__items {
+		display: flex;
+		align-items: center;
+		height: rem(140);
+		gap: rem(12);
+		& .swiper-pagination-bullet {
+			flex: 0 0 rem(10);
+			height: rem(10);
+			background: #fff;
+			border-radius: 50%;
+			opacity: 0.2;
+			transition: opacity 0.3s;
+			cursor: pointer;
+		}
+		& .swiper-pagination-bullet-active {
+			opacity: 1;
+			flex: 0 0 rem(12);
+			height: rem(12);
+		}
+		@media (max-width: $mobileSmall) {
+			justify-content: center;
+		}
+	}
+}
 
 //====================================================================================================
 // ?.home__popular
 .tabs {
 	@include adaptiveValue("padding-top", 100, 30);
 	@include adaptiveValue("padding-bottom", 100, 30);
-	margin-bottom: rem(30);
 	// .tabs__container
 	&__container {
 	}
@@ -27,16 +194,16 @@
 		align-items: center;
 		gap: rem(15);
 		margin-bottom: rem(45);
-		@media (max-width: $mobile){
+		@media (max-width: $mobile) {
 			flex-direction: column;
-			margin-bottom: rem(25);  
+			margin-bottom: rem(25);
 		}
 	}
 	// .tabs__title
 	&__title {
 		font-weight: 700;
 		position: relative;
-		line-height: 1.5; 
+		line-height: 1.5;
 		&::after {
 			content: "";
 			position: absolute;
@@ -86,22 +253,20 @@
 		row-gap: rem(20);
 		margin: 0 rem(-10);
 		flex-wrap: wrap;
-		
 	}
 	// .popular__item
 	&__item {
 		flex: 0 1 25%;
 		padding: 0 rem(10);
-		@media (max-width: rem(1200)){
+		@media (max-width: rem(1200)) {
 			flex: 0 1 33.3333%;
 		}
-		@media (max-width:$tablet){
+		@media (max-width: $tablet) {
 			flex: 0 1 50%;
 		}
-		@media (max-width:$mobile){
-			flex: 0 1 100%; 
+		@media (max-width: $mobile) {
+			flex: 0 1 100%;
 		}
-
 	}
 }
 
@@ -112,7 +277,7 @@
 	flex-direction: column;
 	align-content: start;
 	gap: rem(15);
-	position: relative;	
+	position: relative;
 	// .item-popular__category
 	&__category {
 		position: absolute;
@@ -160,7 +325,7 @@
 	// .item-popular__text
 	&__text {
 		color: #6c757d;
-		flex: 1 1 auto; 
+		flex: 1 1 auto;
 	}
 }
 
@@ -203,7 +368,7 @@
 	&__author {
 	}
 	// .big-post__bg
-	&__bg-ibg {
+	&__bg {
 		position: absolute;
 		top: 0;
 		left: 0;

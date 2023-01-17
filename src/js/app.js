@@ -56,15 +56,15 @@ flsFunctions.tabs();
 // flsFunctions.showMore();
 
 /*
-Модуль "Ефект хвиль"
+Модуль "Эффект волн"
 Документация: https://template.fls.guru/template-docs/modul-ripple-effect.html
 Сниппет (HTML):
 */
 // flsFunctions.rippleEffect();
 
 /*
-Модуль "Кастомний курсор"
-Документация:
+Модуль "Кастомный курсор"
+Документация: https://template.fls.guru/template-docs/modul-custom-cursor.html
 Сниппет (HTML):
 */
 // flsFunctions.customCursor(true);
